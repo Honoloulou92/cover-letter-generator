@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CV Form</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css"
+        integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    <!-- index.css -->
+    <link rel="stylesheet" href="style.css">
+    <!-- wow animate css -->
+    <link rel="stylesheet" href="animate.css">
+    <!-- Font Awesome -->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <!-- Googe Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+    <script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-6 mx-auto wow pulse">
+                <h2 id="intro">Create your Cover Letter</h2>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid m-2">
+        <div class="row">
+            <div class="col-md-6 mx-auto allCont">
+                <div class="container PI wow fadeInUp">
+                    <h3 id="infoPi">Job Section</h3>
+                    <div class="col-lg-10 mx-auto">
+                        <div class="form-group mx-auto">
+                            <label for="job-url">Job URL</label>
+                            <input type="text" class="form-control valid" id="job-url" placeholder="Enter Job URL">
+                        </div>
+                        <div class="form-group mx-auto">
+                            <label for="industry">Industry</label>
+                            <select id="industry" class="form-control valid">
+                                <option value="Architecture / Association / NGO">Architecture / Association / NGO
+                                </option>
+
+                                <option value="Bank / Insurance / Finance">Bank / Insurance / Finance</option>
+                                <option value="Consulting / Audit">Consulting / Audit</option>
+                                <option value="Culture / Media / Entertainment">Culture / Media / Entertainment</option>
+                                <option value="Distribution">Distribution</option>
+                                <option value="Education / Training / Recruitment">Education / Training / Recruitment
+                                </option>
+                                <option value="Food & Beverages">Food & Beverages</option>
+                                <option value="Hotel / Tourism / Recreation">Hotel / Tourism / Recreation</option>
+                                <option value="Real Estate / Industry">Real Estate / Industry</option>
+                                <option value="Engineering">Engineering</option>
+                                <option value="Legal / Justice">Legal / Justice</option>
+                                <option value="Mobility / Transport">Mobility / Transport</option>
+                                <option value="Fashion / Luxury / Beauty / Art de Vivre">Fashion / Luxury / Beauty / Art
+                                    de Vivre</option>
+                                <option value="Advertisement / Marketing / Agency">Advertisement / Marketing / Agency
+                                </option>
+                                <option value="Health / Social / Environment">Health / Social / Environment</option>
+                                <option value="Public sector & administration">Public sector & administration</option>
+                                <option value="Business services">Business services</option>
+                                <option value="Tech">Tech</option>
+                            </select>
+                        </div>
+                        <div class="form-group mx-auto">
+                            <label for="position">Position</label>
+                            <input type="text" class="form-control valid" id="position"
+                                placeholder="Enter your position">
+                        </div>
+                        <div class="form-group mx-auto">
+                            <label for="company">Company</label>
+                            <input type="text" class="form-control valid" id="company" placeholder="Enter your company">
+                        </div>
+                        <!-- <div class="form-group mx-auto">
+                            <label for="bio">Summary (optioal):</label>
+                            <textarea class="form-control" id="summary" placeholder="Optional information"
+                                maxlength="300"></textarea>
+                        </div> -->
+                    </div>
+                </div>
+
+                <hr id="divid">
+                <div class="container JOB wow fadeInUp">
+                    <h3 id="infoJob">Work Experience</h3>
+                    <div class="col-lg-10 mx-auto">
+                        <div id="workcClonediv">
+                            <div class="form-group mx-auto">
+                                <label for="workName">Industry</label>
+                                <select id="workName" class="form-control valid">
+                                    <option value="Architecture / Association / NGO">Architecture / Association / NGO
+                                    </option>
+
+                                    <option value="Bank / Insurance / Finance">Bank / Insurance / Finance</option>
+                                    <option value="Consulting / Audit">Consulting / Audit</option>
+                                    <option value="Culture / Media / Entertainment">Culture / Media / Entertainment
+                                    </option>
+                                    <option value="Distribution">Distribution</option>
+                                    <option value="Education / Training / Recruitment">Education / Training /
+                                        Recruitment</option>
+                                    <option value="Food & Beverages">Food & Beverages</option>
+                                    <option value="Hotel / Tourism / Recreation">Hotel / Tourism / Recreation</option>
+                                    <option value="Real Estate / Industry">Real Estate / Industry</option>
+                                    <option value="Engineering">Engineering</option>
+                                    <option value="Legal / Justice">Legal / Justice</option>
+                                    <option value="Mobility / Transport">Mobility / Transport</option>
+                                    <option value="Fashion / Luxury / Beauty / Art de Vivre">Fashion / Luxury / Beauty /
+                                        Art de Vivre</option>
+                                    <option value="Advertisement / Marketing / Agency">Advertisement / Marketing /
+                                        Agency</option>
+                                    <option value="Health / Social / Environment">Health / Social / Environment</option>
+                                    <option value="Public sector & administration">Public sector & administration
+                                    </option>
+                                    <option value="Business services">Business services</option>
+                                    <option value="Tech">Tech</option>
+                                </select>
+                            </div>
+                            <div class="form-group mx-auto">
+                                <label for="positionWork">Position</label>
+                                <input type="text" class="form-control valid" id="positionWork"
+                                    placeholder="Enter your position">
+                            </div>
+                            <div class="form-group mx-auto">
+                                <label for="companyWork">Company</label>
+                                <input type="text" class="form-control valid" id="companyWork"
+                                    placeholder="Enter your company">
+                            </div>
+                            <div class="">
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <div class="form-group ">
+                                            <label for="fromWork">From:</label>
+                                            <input type="date" class="form-control valid" id="fromWork"
+                                                placeholder="starting date ">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="form-group" id="finishWork">
+                                            <label for="toWork">To:</label>
+                                            <input type="date" class="form-control valid" id="toWork"
+                                                placeholder="Finish date">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="workcClonedivTwo">
+                            <div class="form-group mx-auto">
+                                <label for="workName">Industry</label>
+                                <select id="workNameTwo" class="form-control valid">
+                                    <option value="Architecture / Association / NGO">Architecture / Association / NGO
+                                    </option>
+
+                                    <option value="Bank / Insurance / Finance">Bank / Insurance / Finance</option>
+                                    <option value="Consulting / Audit">Consulting / Audit</option>
+                                    <option value="Culture / Media / Entertainment">Culture / Media / Entertainment
+                                    </option>
+                                    <option value="Distribution">Distribution</option>
+                                    <option value="Education / Training / Recruitment">Education / Training /
+                                        Recruitment</option>
+                                    <option value="Food & Beverages">Food & Beverages</option>
+                                    <option value="Hotel / Tourism / Recreation">Hotel / Tourism / Recreation</option>
+                                    <option value="Real Estate / Industry">Real Estate / Industry</option>
+                                    <option value="Engineering">Engineering</option>
+                                    <option value="Legal / Justice">Legal / Justice</option>
+                                    <option value="Mobility / Transport">Mobility / Transport</option>
+                                    <option value="Fashion / Luxury / Beauty / Art de Vivre">Fashion / Luxury / Beauty /
+                                        Art de Vivre</option>
+                                    <option value="Advertisement / Marketing / Agency">Advertisement / Marketing /
+                                        Agency</option>
+                                    <option value="Health / Social / Environment">Health / Social / Environment</option>
+                                    <option value="Public sector & administration">Public sector & administration
+                                    </option>
+                                    <option value="Business services">Business services</option>
+                                    <option value="Tech">Tech</option>
+                                </select>
+                            </div>
+                            <div class="form-group mx-auto">
+                                <label for="positionWork">Position</label>
+                                <input type="text" class="form-control valid" id="positionWorkTwo"
+                                    placeholder="Enter your position">
+                            </div>
+                            <div class="form-group mx-auto">
+                                <label for="companyWork">Company</label>
+                                <input type="text" class="form-control valid" id="companyWorkTwo"
+                                    placeholder="Enter your company">
+                            </div>
+
+                            <div class="">
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <div class="form-group ">
+                                            <label for="fromWork">From:</label>
+                                            <input type="date" class="form-control valid" id="fromWorkTwo"
+                                                placeholder="starting date ">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="form-group" id="finishWorkTwo">
+                                            <label for="toWorkTwo">To:</label>
+                                            <input type="date" class="form-control valid" id="toWorkTwo"
+                                                placeholder="Finish date">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="workcClonedivThree">
+                            <div class="form-group mx-auto">
+                                <label for="workName">Industry</label>
+                                <select id="workNameThree" class="form-control valid">
+                                    <option value="Architecture / Association / NGO">Architecture / Association / NGO
+                                    </option>
+
+                                    <option value="Bank / Insurance / Finance">Bank / Insurance / Finance</option>
+                                    <option value="Consulting / Audit">Consulting / Audit</option>
+                                    <option value="Culture / Media / Entertainment">Culture / Media / Entertainment
+                                    </option>
+                                    <option value="Distribution">Distribution</option>
+                                    <option value="Education / Training / Recruitment">Education / Training /
+                                        Recruitment</option>
+                                    <option value="Food & Beverages">Food & Beverages</option>
+                                    <option value="Hotel / Tourism / Recreation">Hotel / Tourism / Recreation</option>
+                                    <option value="Real Estate / Industry">Real Estate / Industry</option>
+                                    <option value="Engineering">Engineering</option>
+                                    <option value="Legal / Justice">Legal / Justice</option>
+                                    <option value="Mobility / Transport">Mobility / Transport</option>
+                                    <option value="Fashion / Luxury / Beauty / Art de Vivre">Fashion / Luxury / Beauty /
+                                        Art de Vivre</option>
+                                    <option value="Advertisement / Marketing / Agency">Advertisement / Marketing /
+                                        Agency</option>
+                                    <option value="Health / Social / Environment">Health / Social / Environment</option>
+                                    <option value="Public sector & administration">Public sector & administration
+                                    </option>
+                                    <option value="Business services">Business services</option>
+                                    <option value="Tech">Tech</option>
+                                </select>
+                            </div>
+                            <div class="form-group mx-auto">
+                                <label for="positionWork">Position</label>
+                                <input type="text" class="form-control valid" id="positionWorkThree"
+                                    placeholder="Enter your position">
+                            </div>
+                            <div class="form-group mx-auto">
+                                <label for="companyWork">Company</label>
+                                <input type="text" class="form-control valid" id="companyWorkThree"
+                                    placeholder="Enter your company">
+                            </div>
+                            <div class="">
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <div class="form-group ">
+                                            <label for="fromWork">From:</label>
+                                            <input type="date" class="form-control valid" id="fromWorkThree"
+                                                placeholder="starting date ">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="form-group" id="finishWorkThree">
+                                            <label for="toWorkThree">To:</label>
+                                            <input type="date" class="form-control valid"
+                                                id="toWorkThree" placeholder="Finish date">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-lg-4 text-center mx-auto">
+                                <button class="btn" id="addWork">+</button>
+                                <button class="btn" id="removeWork">-</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr id="divid">
+                <div class="container wow fadeInUp">
+                    <h3 id="infoSkills">Writing Style</h3>
+                    <div class="col-lg-10 mx-auto">
+                        <div class="form-group mx-auto">
+                            <label for="posture">What posture do you want to convey</label>
+                            <select id="posture" class="form-control valid">
+                                <option value="Authoritative">Authoritative</option>
+                                <option value="Casual">Casual</option>
+                                <option value="Confident">Confident</option>
+                                <option value="Edgy">Edgy</option>
+                                <option value="Formal">Formal</option>
+                                <option value="Friendly">Friendly</option>
+                                <option value="Humorous">Humorous</option>
+                                <option value="Informative">Informative</option>
+                                <option value="Inspirational">Inspirational</option>
+                                <option value="Joyful">Joyful</option>
+                                <option value="Optimistic">Optimistic</option>
+                                <option value="Questioning">Questioning</option>
+                                <option value="Quirky">Quirky</option>
+                                <option value="Straightforward">Straightforward</option>
+                                <option value="Trendy">Trendy</option>
+                            </select>
+                        </div>
+                        <div class="form-group mx-auto">
+                            <label for="apply1">Apply on</label>
+                            <select id="apply1" class="form-control valid">
+                                <option value="All">All</option>
+                                <option value="First Paragraph (Introduction)">First Paragraph (Introduction)</option>
+                                <option value="Body">Body</option>
+                                <option value="Last Paragraph (Conclusion)">Last Paragraph (Conclusion)</option>
+
+                            </select>
+                        </div>
+
+                        <div class="form-group mx-auto">
+                            <label for="tone">Tone of Language</label>
+                            <input id="tone" type="range" min="0" max="100" value="80" class="form-control slider">
+                            <p class="range-label">
+                                <span>Neutral</span>
+                                <span>High</span>
+                            </p>
+                        </div>
+
+                        <div class="form-group mx-auto">
+                            <label for="apply2">Apply on</label>
+                            <select id="apply2" class="form-control valid">
+                                <option value="All">All</option>
+                                <option value="First Paragraph (Introduction)">First Paragraph (Introduction)</option>
+                                <option value="Body">Body</option>
+                                <option value="Last Paragraph (Conclusion)">Last Paragraph (Conclusion)</option>
+
+                            </select>
+                        </div>
+
+                        <div class="form-group mx-auto">
+                            <label for="degree">Degree Of Formalism</label>
+                            <input id="degree" type="range" min="0" max="100" value="80" class="form-control slider">
+                            <p class="range-label">
+                                <span>Colloquial</span>
+                                <span>Formal</span>
+                            </p>
+                        </div>
+
+                        <div class="form-group mx-auto">
+                            <label for="apply3">Apply on</label>
+                            <select id="apply3" class="form-control valid">
+                                <option value="All">All</option>
+                                <option value="First Paragraph (Introduction)">First Paragraph (Introduction)</option>
+                                <option value="Body">Body</option>
+                                <option value="Last Paragraph (Conclusion)">Last Paragraph (Conclusion)</option>
+
+                            </select>
+                        </div>
+
+                        <div class="form-group mx-auto">
+                            <label for="include">Includes</label>
+                            <select id="include" class="form-control valid">
+                                <option value="Achievements">Achievements</option>
+                                <option value="Experiences">Experiences</option>
+                                <option value="Timeline">Timeline</option>
+
+                            </select>
+                        </div>
+
+                        <div class="form-group mx-auto">
+                            <label for="keyword">Keywords</label>
+                            <input type="text" class="form-control valid" id="keyword" placeholder="Enter keywords separated by comma">
+                        </div>
+                    </div>
+                    <!-- <div class="col-12 mx-auto">
+                        <div class="form-group mx-auto">
+                            <label for="skills">Skills:</label>
+                            <textarea class="form-control valid" id="skills" placeholder="Your Skills here"
+                                maxlength="300"></textarea>
+                        </div>
+                    </div> -->
+                </div>
+                <hr id="divid">
+                <div class="col-md-4 text-center mx-auto">
+                    <button type="button" id="submitButton">Submit</button>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="col-12 mx-auto">
+                    <div class="form-group mx-auto">
+                        <textarea class="form-control" rows="20" style="border-radius: 16px;" id="output"></textarea>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.js"
+        integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js"
+        integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"
+        integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ"
+        crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+    <script src="wow.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+</body>
+
+</html>
